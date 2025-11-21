@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>ChatBot</title>
+</head>
+<body style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+    <h1 style="font-size: 150px; text-align: center;"></h1> 
+    <div class="chat">
+        <header>
+            <div class="name">
+                <p>
+                    
+                    <img src="assets/img/BOT2.png" width="45px" alt="">
+                    <strong><h1 style="text-align: center; margin-left: 50px;">OptiWatt</h1></strong>
+                </p>
+            </div>
+            <div class="options">
+                <button type="button" id="clearDisplay"><i class="bi bi-arrow-clockwise"></i></button>
+                <button type="button" class="closed-chat" title="Cerrar"><i class="bi bi-x"></i></button>
+            </div>
+        </header>
+        <div class="display">
+            <div class="message">
+                <img src="assets/img/BOT2.png" width="55px" alt="">
+                <div class="result"><p>¡Hola! Soy OptiWatt, tu asistente en eficiencia energética. <br> <br>¿En qué te puedo ayudar el día de hoy?</p></div>
+                
+            </div>
+        </div>
+        <div class="chat-input">
+            <div class="typing" id="typing">
+                <span></span><span></span><span></span>
+            </div>
+            <textarea placeholder="¡¡Haz tu pregunta aquí!!" name="" id="inputChatUser"></textarea>
+            <button type="button" id="chatButtonSend">
+                <i class="bi bi-send"></i>
+            </button>
+        </div>
+    </div>
+    <button type="button" class="buttonOpenChat">
+        <span>¡Hola soy OptiWatt!</span>
+        <img src="assets/img/BOT2.png" width="75px" alt="">
+    </button>
+    <script src="./assets/scripts/api_key.js"></script>
+    <script src="./assets/scripts/chatBot.js"></script>
+</body>
+</html>
